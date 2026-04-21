@@ -37,8 +37,8 @@ body {
 
 .navbar .nav-link.active {
   color: white !important;
-};
 }
+
 
 .navbar-collapse {
   align-items: center;
