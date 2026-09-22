@@ -31,18 +31,53 @@ body {
   background-color: #280246d8;
 }
 
+.navbar-nav {
+  gap: 2rem;
+}
+
 .navbar .nav-link {
   color: white !important;
+  font-family: 'Share Tech Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.15rem;
+  position: relative;
+  padding-bottom: 4px !important;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #7ade30;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.navbar .nav-link:hover {
+  color: #7ade30 !important;
+}
+
+.navbar .nav-link:hover::after {
+  width: 100%;
 }
 
 .navbar .nav-link.active {
-  color: white !important;
+  color: #7ade30 !important;
+}
+
+.navbar .nav-link.active::after {
+  width: 100%;
 }
 
 
 .navbar-collapse {
   align-items: center;
-  justify-content: space-between;  
+  justify-content: space-between;
 }
 
 /* Estilos generales */
@@ -100,15 +135,38 @@ h1 {
 .hero-imagen-desarrollador {
   width: 200px;
   height: 200px;
-  margin: 20px;
+  margin: 30px;
   object-fit: cover;
-  border: 5px solid #7ade30;
-  box-shadow: 0 0 20px rgba(122, 222, 48, 0.5);
+  border: none;
+  outline: 3px solid #7ade30;
+  outline-offset: 6px;
+  box-shadow: 0 0 15px rgba(122, 222, 48, 0.35);
 }
 
 .hero-principal h2 {
   font-size: 1.5rem;
   color: #e0e0e0;
+}
+
+.btn-descargar-cv {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 12px 28px;
+  background-color: #7ade30;
+  color: #0a0a23;
+  font-weight: bold;
+  font-family: 'Share Tech Mono', monospace;
+  text-decoration: none;
+  border-radius: 100px;
+  transition: 0.3s;
+}
+
+.btn-descargar-cv:hover {
+  background-color: #64c11f;
+  color: #0a0a23;
+  transform: translateY(-2px);
 }
 
 .hero-inferior-imagen {
@@ -126,6 +184,19 @@ h1 {
 .sobre-mi .contenedor {
   max-width: 600px;
   text-align: center;
+}
+
+.separador-verde {
+  width: 60px;
+  height: 3px;
+  background-color: #7ade30;
+  margin: 0 auto 25px;
+  border-radius: 2px;
+}
+
+.resaltado {
+  color: #7ade30;
+  font-weight: bold;
 }
 
 /* Experiencia */
@@ -253,49 +324,74 @@ h1 {
   padding: 60px 20px 120px;
 }
 
-.articulos .card {
-  max-width: 700px;
-  margin: 20px auto;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.1); 
-  color: white;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+.articulos .container {
+  max-width: 1100px;
 }
 
-.articulos .list-group-item {
-  background-color: transparent;
-  color: white;
-  border-color: rgba(255, 255, 255, 0.1);
+.enfoque-item {
+  padding: 30px;
+  border: 2px solid #8080804d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all 0.2s ease-in;
+  border-radius: 15px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
 }
 
-.articulos .card-header {
-  background-color: rgba(255, 255, 255, 0.1);
+.enfoque-item:hover {
+  background-color: rgba(27, 27, 50, 0.8);
+}
+
+.enfoque-item i {
+  font-size: 2.2rem;
   color: #7ade30;
+  background-color: #0a0a23;
+  padding: 10px 20px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.enfoque-titulo {
+  font-size: 20px;
   font-weight: bold;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.enfoque-item p {
+  color: #d1c4e9;
+  font-size: 0.95rem;
 }
 
 /* Contacto */
 .contacto .rectangulo {
   margin-top: -5rem;
-  background-color: rgba(13, 110, 253, 0.8);
+  background: linear-gradient(135deg, rgba(56, 8, 94, 0.95), rgba(27, 27, 50, 0.95));
+  border: 1px solid rgba(122, 222, 48, 0.6);
   border-radius: 10px;
   padding: 40px;
-  box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 0 35px rgba(122, 222, 48, 0.4);
 }
 
 .contacto button {
   color: white;
   font-weight: bold;
   background-color: transparent;
-  border: 2px solid white;
+  border: 2px solid #7ade30;
   padding: 15px 30px;
   border-radius: 100px;
   transition: 0.3s;
 }
 
 .contacto button:hover {
-  background-color: white;
-  color: black;
+  background-color: #7ade30;
+  color: #0a0a23;
+  border-color: #7ade30;
 }
 
 /* Footer */
@@ -331,4 +427,30 @@ footer {
 @media screen and (max-width: 767px) {
   .navbar-brand { display: none; }
   .contacto .rectangulo { margin-top: 2rem; }
+}
+
+/* Botón flotante de WhatsApp */
+.whatsapp-flotante {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  transition: transform 0.2s ease;
+}
+
+.whatsapp-flotante i {
+  color: white;
+  font-size: 32px;
+}
+
+.whatsapp-flotante:hover {
+  transform: scale(1.1);
 }
