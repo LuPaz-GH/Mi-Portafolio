@@ -427,6 +427,7 @@ footer {
 @media screen and (max-width: 767px) {
   .navbar-brand { display: none; }
   .contacto .rectangulo { margin-top: 2rem; }
+  body { background-attachment: scroll; }
 }
 
 /* Botón flotante de WhatsApp */
