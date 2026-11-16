@@ -73,7 +73,7 @@ Este repositorio es mi portfolio: un sitio pensado tanto para **empresas** que b
 
 | | Proyecto | Tipo | Stack |
 |:-:|---|---|---|
-| <img src="public/Imagenes/proyectos/mujeres-en-red.jpg" width="160" alt="Mujeres en Red"> | **Mujeres en Red**<br>Sitio institucional de la fundación · *en construcción*<br>[Código](https://github.com/LuPaz-GH/Mujeres_en_red) | 🏢 Cliente real | React · Vite · Three.js · WordPress API |
+| <img src="public/Imagenes/proyectos/mujeres-en-red.jpg" width="160" alt="Mujeres en Red"> | **Mujeres en Red**<br>Sitio institucional de la fundación<br>[Sitio](https://mujeresenred.com.ar) · [Código](https://github.com/LuPaz-GH/Mujeres_en_red) | 🏢 Cliente real | React · Vite · Three.js · WordPress API |
 | <img src="public/Imagenes/proyectos/syncra.jpg" width="160" alt="Syncra Studios"> | **Syncra Studios**<br>Subtitulado inclusivo y accesibilidad<br>[Sitio](https://syncrastudios.com.ar) · [Código](https://github.com/LuPaz-GH/SYNCRAstudios) | 🏢 Cliente real | React · Vite · CSS |
 | <img src="public/Imagenes/proyectos/malfi.jpg" width="160" alt="Malfi Veterinaria"> | **Malfi Veterinaria**<br>Gestión integral con acceso por rol<br>▶️ [Probar demo sin registro](https://malfi-veterinaria.netlify.app/login) · [Código](https://github.com/LuPaz-GH/ProyectoFinal-fullstack) | ⚙️ Sistema | React · Node.js · Express · MySQL · JWT |
 | <img src="public/Imagenes/proyectos/cainzo.jpg" width="160" alt="Panificadora Cainzo"> | **Panificadora Cainzo**<br>Productos, ventas y estadísticas<br>[Sitio](https://panaderiacainzo.netlify.app) · [Código](https://github.com/LuPaz-GH/Panaderia_Cainzo_PC) | ⚙️ Sistema | React · Node.js · Express · MySQL |

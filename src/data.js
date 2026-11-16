@@ -36,8 +36,6 @@ const proyectosBase = [
     categoria: 1,
     cliente: true,
     destacado: true,
-    // el dominio todavía muestra el sitio anterior: sin link en vivo hasta publicar la versión nueva
-    enConstruccion: true,
     imagen: 'Imagenes/proyectos/mujeres-en-red.jpg',
     dominio: 'mujeresenred.com.ar',
     demo: 'https://mujeresenred.com.ar',
@@ -181,7 +179,7 @@ const es = {
     items: {
       mujeres: {
         resumen: 'Nuevo sitio institucional de la Fundación Mujeres en Red, que acompaña a mujeres del NOA en su desarrollo personal, profesional y comunitario.',
-        puntos: ['Diseño y desarrollo completo, con una flor 3D animada', 'El equipo sigue cargando contenido desde WordPress', 'Equipo, blog, catálogo, portfolio y donaciones'],
+        puntos: ['Diseño y desarrollo completo, con una flor 3D animada', 'El equipo sigue cargando contenido desde WordPress', 'Programas, eventos, blog, catálogo y donaciones'],
       },
       syncra: {
         resumen: 'Web del servicio de subtitulado inclusivo y accesibilidad de Mujeres en Red.',
@@ -208,11 +206,11 @@ const es = {
       bajada: 'Rediseño del sitio institucional de una fundación del NOA',
       secciones: [
         ['El contexto', 'La Fundación Mujeres en Red tenía un sitio hecho con una plantilla de WordPress. Necesitaba una imagen más actual y propia, sin perder la forma en que el equipo ya cargaba notas, proyectos y emprendimientos.'],
-        ['Mi rol', 'Como responsable del área de programación, me encargué del diseño y el desarrollo completo del nuevo frontend, y de planificar cómo se va a publicar en el hosting de la fundación.'],
+        ['Mi rol', 'Como responsable del área de programación, me encargué del diseño y el desarrollo completo del nuevo frontend y de su publicación en el hosting de la fundación.'],
         ['La solución', 'Construí el sitio en React con Vite y usé WordPress como "headless": el diseño es nuevo, pero el contenido (blog, portfolio, catálogo y formulario de contacto) sigue saliendo del panel de WordPress que el equipo ya conoce. Sumé una flor 3D animada con Three.js, inspirada en el logo.'],
-        ['Secciones', 'Inicio, Quiénes somos, Equipo, Blog, Catálogo de emprendedoras, Portfolio, Contacto y Donar, con distintos medios de donación (Mercado Pago, QR, transferencia y PayPal).'],
+        ['Secciones', 'Inicio, Quiénes somos, Qué hacemos (programas y proyectos), Eventos, Blog, Catálogo de emprendedoras, Contacto y Donar, con distintos medios de donación (Mercado Pago, QR, transferencia y PayPal).'],
         ['Decisiones técnicas', 'Separé los datos que se editan a mano (equipo, redes, donaciones) de los que vienen de la API, para que mantener el sitio sea simple. Las credenciales de pago quedan solo en el servidor, nunca en el frontend.'],
-        ['Próximo paso', 'Publicar la nueva versión en el dominio e integrar Mercado Pago Checkout Pro para donar directamente desde la web.'],
+        ['Resultado', 'El sitio nuevo ya está publicado en mujeresenred.com.ar. Como próximo paso, se va a integrar Mercado Pago Checkout Pro para donar directamente desde la web.'],
       ],
     },
     malfi: {
@@ -404,7 +402,7 @@ const en = {
     items: {
       mujeres: {
         resumen: 'New institutional website for Fundación Mujeres en Red, a foundation supporting women in northern Argentina in their personal, professional and community growth.',
-        puntos: ['Full design and development, with an animated 3D flower', 'The team keeps publishing content from WordPress', 'Team, blog, catalog, portfolio and donations'],
+        puntos: ['Full design and development, with an animated 3D flower', 'The team keeps publishing content from WordPress', 'Programs, events, blog, catalog and donations'],
       },
       syncra: {
         resumen: "Website for Mujeres en Red's inclusive captioning and accessibility service.",
@@ -431,11 +429,11 @@ const en = {
       bajada: "Redesign of a foundation's institutional website",
       secciones: [
         ['Context', "Fundación Mujeres en Red had a website built on a WordPress theme. They needed a more modern, distinctive look without changing the way the team already published news, projects and the entrepreneurs' catalog."],
-        ['My role', "As head of the foundation's programming area, I handled the full design and development of the new frontend, and planned how it will be deployed to the foundation's hosting."],
+        ['My role', "As head of the foundation's programming area, I handled the full design and development of the new frontend and its deployment to the foundation's hosting."],
         ['The solution', 'I built the site with React and Vite and used WordPress as a headless CMS: the design is brand new, but the content (blog, portfolio, catalog and contact form) still comes from the WordPress panel the team already knows. I added an animated 3D flower with Three.js, inspired by the logo.'],
-        ['Sections', "Home, About us, Team, Blog, Entrepreneurs' catalog, Portfolio, Contact and Donate, with several payment options (Mercado Pago, QR, bank transfer and PayPal)."],
+        ['Sections', "Home, About us, What we do (programs and projects), Events, Blog, Entrepreneurs' catalog, Contact and Donate, with several payment options (Mercado Pago, QR, bank transfer and PayPal)."],
         ['Technical decisions', 'I separated hand-edited data (team, social links, donations) from API data to keep the site easy to maintain. Payment credentials live only on the server, never in the frontend.'],
-        ['Next step', 'Deploy the new version to the domain and integrate Mercado Pago Checkout Pro so people can donate directly from the site.'],
+        ['Outcome', 'The new site is live at mujeresenred.com.ar. The next step is integrating Mercado Pago Checkout Pro so people can donate directly from the site.'],
       ],
     },
     malfi: {
