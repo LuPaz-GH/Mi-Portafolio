@@ -179,7 +179,7 @@ const es = {
     items: {
       mujeres: {
         resumen: 'Nuevo sitio institucional de la Fundación Mujeres en Red, que acompaña a mujeres del NOA en su desarrollo personal, profesional y comunitario.',
-        puntos: ['Diseño y desarrollo completo, con una flor 3D animada', 'El equipo sigue cargando contenido desde WordPress', 'Programas, eventos, blog, catálogo y donaciones'],
+        puntos: ['Diseño y desarrollo completo, con una flor 3D animada', 'Programado desde cero en React; las notas y el catálogo se cargan desde WordPress', 'Programas, eventos, blog, catálogo y donaciones'],
       },
       syncra: {
         resumen: 'Web del servicio de subtitulado inclusivo y accesibilidad de Mujeres en Red.',
@@ -402,7 +402,7 @@ const en = {
     items: {
       mujeres: {
         resumen: 'New institutional website for Fundación Mujeres en Red, a foundation supporting women in northern Argentina in their personal, professional and community growth.',
-        puntos: ['Full design and development, with an animated 3D flower', 'The team keeps publishing content from WordPress', 'Programs, events, blog, catalog and donations'],
+        puntos: ['Full design and development, with an animated 3D flower', 'Built from scratch in React; news and catalog are managed in WordPress', 'Programs, events, blog, catalog and donations'],
       },
       syncra: {
         resumen: "Website for Mujeres en Red's inclusive captioning and accessibility service.",
